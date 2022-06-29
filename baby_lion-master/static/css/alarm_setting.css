@@ -26,9 +26,22 @@
   line-height: 22px;
 }
 
-
+.arrow-btn{
+  position: fixed;
+  top: 250px;
+  /* top: 150px; */
+  z-index: 10;
+}
+#left{
+  left: 10px;
+}
+#right{
+  right: 10px;
+  transform: scaleX(-1);
+}
 /* from here  */
 #hello{
+  position: relative;
   width: 100%;
   overflow-x: scroll;
   -ms-overflow-style: none; /* IE and Edge */

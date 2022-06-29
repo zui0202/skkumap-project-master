@@ -1,3 +1,4 @@
+import time
 from django.shortcuts import render, redirect
 from django.contrib import auth
 from django.contrib.auth.models import User
@@ -36,5 +37,29 @@ def profile(request):
 def community(request):
     if request.user.is_authenticated:
         return render(request, 'community.html')
+    else:
+        return redirect('login')
+
+def map(request):
+    if request.user.is_authenticated:
+        return render(request, 'map.html')
+    else:
+        return redirect('login')
+
+def alarm(request):
+    if request.user.is_authenticated:
+        return render(request, 'alarm_setting.html')
+    else:
+        return redirect('login')
+
+def message(request):
+    if request.user.is_authenticated:
+        return render(request, 'messenger.html')
+    else:
+        return redirect('login')
+
+def building(request):
+    if request.user.is_authenticated:
+        return render(request, 'building.html')
     else:
         return redirect('login')

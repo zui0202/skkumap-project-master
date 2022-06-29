@@ -1,17 +1,20 @@
 .input-cover{
   box-sizing: border-box;
-  width: 83%;
+  width: 86.4%;
   height: 45px;
   background: #FFFFFF;
-  border: 2px solid #10675B;
+  border: 2px solid #ABB0BC;
   border-radius: 30px;
   margin: 100px auto 18px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input{
   width: 80%;
   height: 22.5px;
-  margin: 10px 0 0 18px;
+  margin-left : 18px;
   border: none;
   font-family: 'Noto Sans Thai';
   font-style: normal;
@@ -22,7 +25,9 @@ input{
   letter-spacing: -0.408px;
   color: #ABB0BC;
 }
-
+.search{
+  margin-right: 18px;
+}
 input:focus{
   outline:none;
 }

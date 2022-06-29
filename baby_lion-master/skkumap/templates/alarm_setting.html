@@ -1,27 +1,32 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/menu&nav.css">
-  <link rel="stylesheet" href="./alarm_setting.css">
-  <link rel="stylesheet" href="./timetable.css">
+  <link rel="stylesheet" href="{% static '/css/menu&nav.css'%}"> 
+  <link rel="stylesheet" href="{% static '/css/alarm_setting.css'%}">
+  <link rel="stylesheet" href="{% static '/css/timetable.css'%}">
   <title>SKKU MAP</title>
 </head>
 <body>
   <menu class="menu-bar">
     <div>
-      <img src="../svg/left_arrow.svg" alt="left_arrow.svg" id="left-arrow">
+      <a href="javascript:history.back();"> 
+      <img src="{% static '/img/left_arrow.svg'%}" alt="left_arrow.svg" id="left-arrow">
+      </a>
       <span class="page-name"></span>
     </div>
-    <img src="../svg/bell.svg" alt="bell.svg" id="bell">
+    <img src="{% static '/img/bell.svg'%}" alt="bell.svg" id="bell">
   </menu>
   <section class="alert-setting">
-    <img src="../svg/alarm_green.svg" alt="alarm.svg" class="alarm">
+    <img src="{% static '/img/alarm_green.svg'%}" alt="alarm.svg" class="alarm">
     <h1 class="page-title">알림 설정</h1>
   </section>
   <div id="hello">
+    <img src="{% static '/img/left_arrow.svg'%}" alt="left-arrow" class="arrow-btn" id="left">
+    <img src="{% static '/img/left_arrow.svg'%}" alt="" class="arrow-btn" id="right">
     <section class="days"></section>
   </div>
   <section class="timetable">
@@ -39,23 +44,31 @@
     </ul>
   </section>
   <nav class="nav-bar">
-    <div class="nav-icon">
-      <img src="../svg/home.svg" alt="home.svg" id="home">
+    <div class="nav-icon"> 
+      <a href="/">
+      <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
+      </a>
       <p class="icon-name">홈</p>
     </div>
     <div class="nav-icon">
-      <img src="../svg/message.svg" alt="message.svg" id="message">
+      <a href="/message">
+      <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
+      </a>
       <p class="icon-name">메시지</p>
     </div>
     <div class="nav-icon">
-      <img src="../svg/favorite.svg" alt="favorite.svg" id="favorites">
+      <a href="/favorites">
+      <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
+      </a>
       <p class="icon-name">즐겨찾기</p>
     </div>
     <div class="nav-icon">
-      <img src="../svg/my.svg" alt="my.svg" id="my">
-      <p class="icon-name">내 정보</p>
+      <a href="/profile">
+      <img src="{% static '/img/my.svg'%}" alt="my.svg" id="my">
+      </a>
+      <p class="icon-name">내 정보</p> 
     </div>
   </nav>
-  <script type="module" src="./alarm_setting.js"></script>
+  <script type="module" src="{% static '/js/alarm_setting.js'%}"></script>
 </body>
 </html>

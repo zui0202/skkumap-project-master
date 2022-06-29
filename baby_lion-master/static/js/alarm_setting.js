@@ -2,12 +2,13 @@ import EVENTS from "./event.js"
 
 //DOM
 const ALARM_IMG = document.querySelector(".alarm");
-const BELL_IMG = document.querySelector("#bell");
 const TABLE = document.querySelector(".table");
 const TIMETABLE_CONTAINER = document.querySelector(".timetable");
 const hello = document.querySelector("#hello");
 const DAY_CONTAINER = document.querySelector(".days");
-const LEFT_ARROW = document.querySelector("#left-arrow");
+
+const LEFT_ARROW = document.querySelector("#left");
+const RIGHT_ARROW = document.querySelector("#right");
 
 //generate date carousel
 const DAY_ARR = [
@@ -176,7 +177,6 @@ for (let i=1; i<12; i++){
 
 TIMETABLE_CONTAINER.scrollTo(0,684);
 hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
-// hello.scrollIntoView({block:"center"});
 console.log(DAY_CONTAINER.offsetWidth);
 
 
@@ -219,30 +219,29 @@ const moveDayInfoRight = (index , idx) => {
 }
 
 let count = 29;
-
-LEFT_ARROW.addEventListener("click",()=>{
-    // console.log(DAY_CONTAINER.childNodes);
-  moveDayInfoLeft(0);
-  moveDayInfoLeft(1);
-  moveDayInfoLeft(2);
-  moveDayInfoLeft(3);
-  moveDayInfoLeft(4);
-  setTimeout(() => {
-    renderDayInfo(count,"MON",false);
-  }, 500);
-  moveDayInfoLeft(5);
-  setTimeout(() => {
-  DAY_CONTAINER.childNodes[2].id = null;
-  DAY_CONTAINER.childNodes[0].remove();
-  DAY_CONTAINER.childNodes[2].id = "center";
-  }, 500);
-    count++
-  hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
-})
-
 let counts = 25;
 
-const hil = ()=>{
+const leftChange = ()=>{
+  // console.log(DAY_CONTAINER.childNodes);
+moveDayInfoLeft(0);
+moveDayInfoLeft(1);
+moveDayInfoLeft(2);
+moveDayInfoLeft(3);
+moveDayInfoLeft(4);
+setTimeout(() => {
+  renderDayInfo(count,"MON",false);
+}, 500);
+moveDayInfoLeft(5);
+setTimeout(() => {
+DAY_CONTAINER.childNodes[2].id = null;
+DAY_CONTAINER.childNodes[0].remove();
+DAY_CONTAINER.childNodes[2].id = "center";
+}, 500);
+  count++
+hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
+}
+
+const rightChange = ()=>{
   moveDayInfoRight(4, 0);
   moveDayInfoRight(3, 1);
   moveDayInfoRight(2, 2);
@@ -260,20 +259,10 @@ const hil = ()=>{
   counts--
   hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
 }
-BELL_IMG.addEventListener("click", hil )
 
-// function debounce(method, delay) {
-//   clearTimeout(method._tId);
-//   method._tId= setTimeout(function(){
-//       method();
-//   }, delay);
-// }
-
-// hello.addEventListener("scroll", ()=>{
-//   debounce(hil, 200)
-//   hello.scrollTo((DAY_CONTAINER.offsetWidth - hello.offsetWidth)/2,0);
-// })
-
+//event listener
+RIGHT_ARROW.addEventListener( "click", rightChange )
+LEFT_ARROW.addEventListener( "click", leftChange )
 
 //누르면 오전 9시로 이동
 ALARM_IMG.addEventListener("click",()=>{

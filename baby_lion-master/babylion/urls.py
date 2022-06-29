@@ -28,4 +28,8 @@ urlpatterns = [
     path('favorites/', skkumap_views.favorites, name='favorites'),
     path('profile/', skkumap_views.profile, name='profile'),
     path('community/', skkumap_views.community, name='community'),
+    path('map/', skkumap_views.map, name='map'),
+    path('alarm/', skkumap_views.alarm, name='alarm'),
+    path('message/', skkumap_views.message, name='message'),
+    path('building/', skkumap_views.building, name='building'),
 ]

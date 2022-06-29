@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +14,13 @@
     <!-- 상단 메뉴바 -->
     <menu class="menu-bar">
       <div>
+        <a href="javascript:history.back();">
         <img
           src="{% static '/img/left_arrow_profile.svg'%}"
           alt="left_arrow_profile.svg"
           id="left_arrow_profile"
         />
+        </a>
         <span class="page-name"></span>
       </div>
       <img
@@ -143,31 +146,39 @@
     <!-- 하단 메뉴바 -->
     <nav class="nav-bar">
       <div class="nav-icon">
+        <a href="/">
         <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home" />
+        </a>
         <p class="icon-name">홈</p>
       </div>
       <div class="nav-icon">
+        <a href="/message">
         <img
           src="{% static '/img/message.svg'%}"
           alt="message.svg"
           id="message"
         />
+        </a>
         <p class="icon-name">메시지</p>
       </div>
       <div class="nav-icon">
+        <a href="/favorites">
         <img
           src="{% static '/img/favorite.svg'%}"
           alt="favorite.svg"
           id="favorites"
         />
+        </a>
         <p class="icon-name">즐겨찾기</p>
       </div>
       <div class="nav-icon">
+        <a href="/profile">
         <img
           src="{% static '/img/my_profile.svg'%}"
           alt="my_profile.svg"
           id="my_profile"
         />
+        </a>
         <p class="icon-name">내 정보</p>
       </div>
     </nav>

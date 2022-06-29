@@ -1,21 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./building.css">
-  <link rel="stylesheet" href="../css/menu&nav.css">
+  <link rel="stylesheet" href="{% static '/css/building.css'%}"> 
+  <link rel="stylesheet" href="{% static '/css/menu&csv.css'%}">
   <title>SKKU MAP</title>
 </head>
 <body>
   <!-- 상단 메뉴바-->
   <menu class="menu-bar">
     <div>
-      <img src="../svg/left_arrow.svg" alt="left_arrow.svg" id="left-arrow">
+      <a href="javascript:history.back();"> 
+      <img src="{% static '/img/left_arrow.svg'%}" alt="left_arrow.svg" id="left-arrow">
+      </a>
       <span class="page-name"></span>
-    </div>
-    <img src="../svg/bell.svg" alt="bell.svg" id="bell">
+    </div> 
+    <img src="{% static '/img/bell.svg'%}" alt="bell.svg" id="bell">
   </menu>
 
   <!-- 건물 사진 -->
@@ -41,15 +44,15 @@
         </div>
         <!-- 타임테이블 -->
         <div class="timetable">
-          <div class="time_icon">
-            <img src="../svg/alarm.svg" alt="alarm.svg" id="alarm">
+          <div class="time_icon"> 
+            <img src="{% static '/img/alarm.svg'%}" alt="alarm.svg" id="alarm">
           </div>
         </div>
       </div>
       <div class="right_box">
         <!-- 층별정보 -->
-        <div class="floor_info">
-          <li class="info_title"><img src="../svg/info.svg" alt="info.svg" id="info">층별정보</li>
+        <div class="floor_info"> 
+          <li class="info_title"><img src="{% static '/img/info.svg'%}" alt="info.svg" id="info">층별정보</li>
         </div>
       </div>
     </div>
@@ -58,23 +61,23 @@
   <section class="floor_click"></section>
   <!-- 하단 메뉴바  -->
   <nav class="nav-bar">
-    <div class="nav-icon">
-      <img src="../svg/home.svg" alt="home.svg" id="home">
+    <div class="nav-icon"> 
+      <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
       <p class="icon-name">홈</p>
     </div>
     <div class="nav-icon">
-      <img src="../svg/message.svg" alt="message.svg" id="message">
+      <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
       <p class="icon-name">메시지</p>
     </div>
     <div class="nav-icon">
-      <img src="../svg/favorite.svg" alt="favorite.svg" id="favorites">
+      <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
       <p class="icon-name">즐겨찾기</p>
     </div>
     <div class="nav-icon">
-      <img src="../svg/my.svg" alt="my.svg" id="my">
+      <img src="{% static '/img/my.svg'%}" alt="my.svg" id="my">
       <p class="icon-name">내 정보</p>
     </div>
-  </nav>
-  <script type="module" src="./building.js"></script>
+  </nav> 
+  <script type="module" src="{% static '/js/buildingInfo.js'%}"></script>
 </body>
 </html>
