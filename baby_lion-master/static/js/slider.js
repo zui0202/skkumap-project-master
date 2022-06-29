@@ -1,29 +1,30 @@
-import BANNER from "./banner.js";
+import BANNER from "./banner.js"
 
 //DOM
 const IMGCON = document.querySelector(".banner-container");
 const SLIDER = document.querySelector(".slider");
 const CIRCLE_CONTAINER = document.querySelector(".info-circles");
 
-BANNER.forEach((banner) => {
+BANNER.forEach((banner,idx) => {
   const img = document.createElement("div");
 
   const img_info = document.createElement("div");
 
-  const TITLE = document.createElement("h1");
-  const h1_text = document.createTextNode(banner.title);
-  TITLE.appendChild(h1_text);
+  const TITLE = document.createElement("h1")
+  const h1_text = document.createTextNode( banner.title );
+  TITLE.appendChild(h1_text)
 
-  const PARAGRAPH = document.createElement("p");
-  const p_text = document.createTextNode(banner.paragraph);
-  PARAGRAPH.appendChild(p_text);
+  const PARAGRAPH = document.createElement("p")
+  const p_text = document.createTextNode( banner.paragraph );
+  PARAGRAPH.appendChild(p_text)
+  PARAGRAPH.classList.add("building-info")
 
   img_info.appendChild(TITLE);
   img_info.appendChild(PARAGRAPH);
-
+  
   const building_img = document.createElement("img");
-  building_img.src = "../../static/img/myeong-ryun-dang.svg";
-  building_img.alt = `${banner.title}`;
+  building_img.src = banner.img;
+  building_img.alt = "banner.img";
 
   img.appendChild(img_info);
   img.appendChild(building_img);
@@ -33,55 +34,61 @@ BANNER.forEach((banner) => {
   img.classList.add("img");
   img_info.classList.add("img-info");
   building_img.classList.add("building-img");
-});
+  if (idx%2 != 0){
+    PARAGRAPH.style.color = "#01BEB1";
+    img.style.backgroundColor = "#10675B";
+  }
+})
 
 const IMG = document.querySelectorAll(".img");
 
 // 슬라이더 가로 길이 조절을 위해 interval 설정(반응형)
 setInterval(() => {
-  IMG.forEach((image) => {
+  IMG.forEach((image)=>{
     image.style.width = `${SLIDER.offsetWidth}px`;
-  });
-  IMGCON.style.width = `${SLIDER.offsetWidth * IMG.length}px`;
+  })
+  IMGCON.style.width = `${SLIDER.offsetWidth*IMG.length}px`;
 }, 10);
 
+
 // 페이지의 엘레먼트대로 인덱스써클 형성
-IMG.forEach((image) => {
+IMG.forEach((image)=>{
   const CIRCLE = document.createElement("div");
   CIRCLE.classList.add("circle");
   CIRCLE_CONTAINER.appendChild(CIRCLE);
-});
+})
 
 //DOM에 추가
 const CIRCLES = document.querySelectorAll(".circle");
 
 const resetCircles = () => {
-  CIRCLES.forEach((circle) => {
-    circle.style.opacity = 0.2;
-  });
-};
+  CIRCLES.forEach((circle)=>{
+    circle.classList.remove("current")
+  })
+}
 
 // default value
-let displayIDX = 0;
+let displayIDX = 0
 resetCircles();
-CIRCLES[displayIDX].style.opacity = 0.5;
+CIRCLES[displayIDX].classList.add("current")
 
 //x-scroll 위치 변경 event handler
 const changeDisplay = () => {
-  displayIDX = displayIDX + 1 >= IMG.length ? 0 : displayIDX + 1;
-  resetCircles();
-  CIRCLES[displayIDX].style.opacity = 0.5;
+  displayIDX = displayIDX + 1 >= IMG.length ? 0 : displayIDX + 1
+  resetCircles()
+  // CIRCLES[displayIDX].style.opacity = 0.5;
+  CIRCLES[displayIDX].classList.add("current")
   SLIDER.scrollTo({
     top: 0,
-    left: SLIDER.offsetWidth * displayIDX,
-    behavior: "smooth",
+    left: SLIDER.offsetWidth*displayIDX,
+    behavior: "smooth"
   });
   console.log(SLIDER.scrollLeft);
-};
+}
 
-// every 5s change bannner
+// every 5s change bannner 
 setInterval(() => {
-  changeDisplay();
+  changeDisplay()
 }, 5000);
 
 // Event Listener
