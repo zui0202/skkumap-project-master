@@ -35,31 +35,24 @@
       </li> -->
     </ul>
   </main>
+  <!-- 하단 메뉴바 -->
   <nav class="nav-bar">
-    <div class="nav-icon">
-      <a href="/">
+    <a class="nav-icon" href="/">
       <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
-      </a> 
       <p class="icon-name">홈</p>
-    </div>
-    <div class="nav-icon">
-      <a href="/message">
+    </a>
+    <a class="nav-icon" href="/message">
       <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
-      </a>
       <p class="icon-name">메시지</p>
-    </div>
-    <div class="nav-icon">
-      <a href="/favorites">
+    </a>
+    <a class="nav-icon" href="/favorites">
       <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
-      </a> 
       <p class="icon-name">즐겨찾기</p>
-    </div>
-    <div class="nav-icon">
-      <a href="/profile">
+    </a>
+    <a class="nav-icon" href="/profile">
       <img src="{% static '/img/my.svg'%}" alt="my.svg" id="my">
-      </a>
       <p class="icon-name">내 정보</p>
-    </div>
+    </a>
   </nav>
   <script type="module"src="{% static '/js/favorites.js'%}"></script> 
 </body>

@@ -43,32 +43,25 @@
       </div> -->
     </ul>
   </section>
-  <nav class="nav-bar">
-    <div class="nav-icon"> 
-      <a href="/">
-      <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
+    <!-- 하단 메뉴바 -->
+    <nav class="nav-bar">
+      <a class="nav-icon" href="/">
+        <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
+        <p class="icon-name">홈</p>
       </a>
-      <p class="icon-name">홈</p>
-    </div>
-    <div class="nav-icon">
-      <a href="/message">
-      <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
+      <a class="nav-icon" href="/message">
+        <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
+        <p class="icon-name">메시지</p>
       </a>
-      <p class="icon-name">메시지</p>
-    </div>
-    <div class="nav-icon">
-      <a href="/favorites">
-      <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
+      <a class="nav-icon" href="/favorites">
+        <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
+        <p class="icon-name">즐겨찾기</p>
       </a>
-      <p class="icon-name">즐겨찾기</p>
-    </div>
-    <div class="nav-icon">
-      <a href="/profile">
-      <img src="{% static '/img/my.svg'%}" alt="my.svg" id="my">
+      <a class="nav-icon" href="/profile">
+        <img src="{% static '/img/my.svg'%}" alt="my.svg" id="my">
+        <p class="icon-name">내 정보</p>
       </a>
-      <p class="icon-name">내 정보</p> 
-    </div>
-  </nav>
+    </nav>
   <script type="module" src="{% static '/js/alarm_setting.js'%}"></script>
 </body>
 </html>
