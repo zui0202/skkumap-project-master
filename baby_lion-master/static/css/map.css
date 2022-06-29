@@ -60,7 +60,7 @@ body{
   /* flex-direction: column; */
   /* justify-content: center; */
   /* align-items: center; */
-  /* height: 844px; */
+  height: 100vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -78,6 +78,7 @@ body{
   /* transform:rotate(45deg) */
   transition: 1s all;
   min-width: 618px;
+  top: 30%
 }
 
 .building{
@@ -122,6 +123,7 @@ body{
 
 input[type="range"]::-webkit-slider-thumb{
   background-color: var(--background);
+  transition: 1s all;
 }
 
 input[type="range"] {
