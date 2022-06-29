@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/login.css'%}">
+  <title>SKKU MAP</title>
+</head>
+<body>
+  <section class="login-upper">
+    <div class="img-container">
+      <img src="{% static '/img/main-icon.svg'%}" alt="main_icon">
+    </div>
+    <h1>3초 로그인하고
+      <br>
+      <strong>빠르게 길찾기</strong>
+    </h1>
+  </section>
+  <section class="login">
+    <div class="input-cover">
+      <input type="text" class="id" placeholder="아이디">
+    </div>
+    <div class="input-cover" id="pw-cover">
+      <input type="password" class="password" placeholder="비밀번호">
+      <div class="show">표시</div>
+    </div>
+    <p class="login-selection">
+      <a href="#" class="">아이디찾기</a> ㅣ <a href="#" class="">비밀번호 찾기</a> ㅣ <a href="#" class="">회원가입</a>
+    </p>
+  </section>
+  <section class="start-btn">
+    <a href = "/loading">
+      <p>시작하기</p>
+    </a>
+  </section>
+</body>
+</html>

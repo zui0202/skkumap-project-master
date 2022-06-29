@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "CWDangamAsac-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* BM dohyeon 폰트 못찾음 폰트 찾아야함 */
+
+.slider {
+  width: 100%;
+  overflow: scroll;
+  height: 329px;
+  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.img-info {
+  margin: 213px 0 0 17px;
+}
+h1 {
+  font-family: "CWDangamAsac-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #fffc54;
+}
+p {
+  margin-top: 10px;
+  font-family: "BM Dohyeon";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.5px;
+  line-height: 19px;
+  /* or 200% */
+  letter-spacing: -0.908px;
+  color: #464646;
+}
+
+.building-img {
+  margin-top: 89px;
+  width: 217px;
+  height: 217px;
+}
+.info-circles {
+  position: absolute;
+  left: 50%;
+  top: 309px;
+  display: flex;
+  /* text-align: center; */
+}
+.circle {
+  margin-left: -50%;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  opacity: 0.2;
+}
+.circle:not(:first-child) {
+  margin-left: 5px;
+}
+.banner-container {
+  height: 329px;
+  background-color: #01beb1;
+  background-color: #000;
+  display: flex;
+}
+.img {
+  display: flex;
+  justify-content: space-between;
+  height: 329px;
+  background-color: #01beb1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-cover {
+  box-sizing: border-box;
+  width: 86.4%;
+  height: 45px;
+  background: #ffffff;
+  border: 2px solid #abb0bc;
+  border-radius: 30px;
+  margin-top: 19px;
+}
+
+input {
+  width: 80%;
+  height: 22.5px;
+  margin: 10px 0 0 18px;
+  border: none;
+  font-family: "Noto Sans Thai";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 147% */
+  letter-spacing: -0.408px;
+  color: #abb0bc;
+}
+
+input:focus {
+  outline: none;
+}
+
+.con-mid {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 156px;
+}
+
+.map-contents {
+  width: 150px;
+  height: 156px;
+  background-color: #eee;
+  background: #10675b;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-family: "CWDangamAsac-Bold";
+  font-style: normal;
+  font-weight: 700;
+}
+.map-contents-text {
+  margin-top: 14px;
+  font-size: 25px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #fffc54;
+}
+.ginko {
+  width: 81px;
+  height: 81px;
+}
+#natural-sci {
+  margin-left: 19px;
+}
+.robot {
+  width: 81px;
+  height: 81px;
+}
+.con-bot {
+  margin-top: 19px;
+  height: 91px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.community {
+  background-color: #eee;
+  width: 215px;
+  height: 83px;
+  background: #fde461;
+  border: 4px solid #10675b;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alert-setting {
+  background-color: #eee;
+  width: 83px;
+  margin-left: 11px;
+  height: 83px;
+  background: #01beb1;
+  border: 4px solid #10675b;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h5 {
+  font-family: "Noto Sans Thai";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.092px;
+}
+.community-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #10675b;
+}
+.community-text {
+  margin-top: -20px;
+  margin-left: -60px;
+  line-height: 30px;
+  color: #01beb1;
+}
+.alert-text {
+  color: #10675b;
+}

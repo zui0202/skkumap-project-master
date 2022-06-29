@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/community.css'%}"> 
+  <link rel="stylesheet" href="{% static '/css/menu&nav.css'%}">
+  <!-- input에 폰트 어썸 넣기 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+  <title>SKKU MAP</title>
+</head>
+<body>
+  <!-- 상단 메뉴바 -->
+  <menu class="menu-bar">
+    <div>
+      <img src="{% static '/img/left_arrow.svg'%}" alt="left_arrow.svg" id="left-arrow"> 
+      <span class="page-name"></span>
+    </div>
+    <img src="{% static '/img/bell.svg'%}" alt="bell.svg" id="bell">
+  </menu>
+  <!-- 타이틀화면 -->
+  <section class="title">
+      <div class="title-info">
+        <p>꿀팁 및 정보 공유 커뮤니티</p>
+        <h1>스꾸 꿀단지 🍯</h1>
+      </div>
+  </section>
+  <!-- 검색기능 -->
+  <section class="search">
+    <div class="search_container">
+      <input type="search" placeholder="글 제목, 내용, 해시태그">
+    </div>
+  </section>
+  <!-- 게시판 -->
+  <section class="board">
+    <div class="board_container" id="자유게시판">
+      <h2>자유게시판</h2>
+      <p>오늘 호암관 엘베에서</p>
+      <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right"> 
+    </div>
+    <div class="board_container" id="일상꿀팁">
+      <h2>일상꿀팁</h2>
+      <p>셔틀안타고도 10분컷 가능?</p>
+      <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right"> 
+    </div>
+    <div class="board_container" id="공부장소">
+      <h2>공부하기 좋은 장소 BEST</h2>
+      <p>경영관 사랑방</p>
+      <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right">
+    </div>
+  </section>
+  <!-- 지름길 -->
+    <div class="shortcut"> 
+      <h2>바쁜 성균인들을 위한 지름길 <img src="{% static '/img/info_shortcut.svg'%}" alt="info_shortcut.svg" id="info_shortcut"></h2>
+      <div class="shortcut_click">
+        <span>click</span>
+        <img src="{% static '/img/flag.svg'%}" alt="flag.svg" id="flag">
+      </div>
+      <div class="shortcut_container">
+        <ul class="shortcut_path">
+          <li class="shortcut_detail">경영관-경제관</li>
+          <li class="shortcut_detail">경영관 3층- 경제관 1층- 외부 필로티</li>
+          <li class="shortcut_detail">경영관 5층- 경제관 3층- 인문관 3층</li>
+        </ul>
+        <div class="cross_line"></div>
+        <ul class="shortcut_path">
+          <li class="shortcut_detail">수선관-법학관</li>
+          <li class="shortcut_detail">언덕계단 올라가서 나오는 층은 5층</li>
+          <li class="shortcut_detail">법학관쪽 문은 1층</li>
+        </ul>
+      </div>
+    </div>
+<!-- 하단 메뉴바 -->
+  <nav class="nav-bar">
+    <div class="nav-icon"> 
+      <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
+      <p class="icon-name">홈</p>
+    </div>
+    <div class="nav-icon">
+      <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
+      <p class="icon-name">메시지</p>
+    </div>
+    <div class="nav-icon">
+      <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
+      <p class="icon-name">즐겨찾기</p>
+    </div>
+    <div class="nav-icon">
+      <img src="{% static '/img/my.svg'%}" alt="my.svg" id="my">
+      <p class="icon-name">내 정보</p>
+    </div>
+  </nav>
+  
+</body>
+</html>

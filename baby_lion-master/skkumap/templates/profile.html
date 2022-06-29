@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/profile.css'%}">  
+  <link rel="stylesheet" href="{% static '/css/menu&nav.css'%}">
+  <title>SKKU MAP</title>
+</head>
+<body>
+<!-- 상단 메뉴바 -->
+  <menu class="menu-bar">
+    <div> 
+      <img src="{% static '/img/left_arrow_profile.svg'%}" alt="left_arrow_profile.svg" id="left_arrow_profile">
+      <span class="page-name"></span>
+    </div>
+    <img src="{% static '/img/bell_profile.svg'%}" alt="bell_profile.svg" id="bell_profile">
+  </menu>
+<!-- 타이틀 화면 -->
+  <section class="title">
+    <div class="title-info">
+      <div class="profile_img">
+        <img src="{% static '/img/profile.svg'%}" alt="profile.svg" id="profile">
+      </div>
+      <h1>김멋사</h1>
+    </div>
+  </section>
+<!-- 개인설정 -->
+  <section class="profile_items">
+    <div class="item">
+      <p class="item_name">닉네임</p>
+      <div class="item_content">
+        <p>멋쟁이사자</p>
+        <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right"> 
+      </div>
+    </div>
+    <div class="item">
+      <p class="item_name">내 계정</p>
+      <div class="item_content">
+        <p>likelion0000@naver.com</p>
+        <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right">
+      </div> 
+    </div>
+    <div class="item">
+      <p class="item_name">잠금설정</p>
+      <div class="item_content">
+        <p>on</p>
+        <img src="{% static '/img/toggle-on.svg'%}" alt="toggle-on.svg" id="toggle_on">
+        <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right">
+      </div>
+    </div>
+    <div class="item">
+      <p class="item_name">데이터설정</p>
+      <div class="item_content">
+        <p>wifi만</p>
+        <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right">
+      </div>
+    </div>
+    <div class="item">
+      <p class="item_name">알림설정</p>
+      <div class="item_content">
+        <p>off</p>
+        <img src="{% static '/img/toggle-ff.svg'%}" alt="toggle-ff.svg" id="toggle_ff">
+        <img src="{% static '/img/chevron_right.svg'%}" alt="chevron_right.svg" id="chevron_right">
+      </div>
+    </div>
+  </section>
+  <!-- 로그아웃기능 -->
+  <section class="logout">
+    <p>로그아웃</p>
+  </section>
+  <!-- 공유기능 -->
+  <div class="sharing">
+    <span>공유하기</span> {% static '/img/naver.svg'%}
+    <img src="{% static '/img/sharing_arrow.svg'%}" alt="sharing_arrow.svg" id="sharing_arrow">
+    <div class="sharing_icons">
+      <img src="{% static '/img/twitter.svg'%}" alt="twitter.svg" id="twitter">
+      <img src="{% static '/img/facebook_message.svg'%}" alt="facebook_message.svg" id="facebook_message">
+      <img src="{% static '/img/facebook.svg'%}" alt="facebook.svg" id="facebook">
+      <img src="{% static '/img/insta.svg'%}" alt="insta.svg" id="insta">
+      <img src="{% static '/img/naver.svg'%}" alt="naver.svg" id="naver">
+    </div>
+    <img>
+  </div>
+<!-- 하단 메뉴바 -->
+  <nav class="nav-bar">
+    <div class="nav-icon"> 
+      <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
+      <p class="icon-name">홈</p>
+    </div>
+    <div class="nav-icon">
+      <img src="{% static '/img/message.svg'%}" alt="message.svg" id="message">
+      <p class="icon-name">메시지</p>
+    </div>
+    <div class="nav-icon">
+      <img src="{% static '/img/favorite.svg'%}" alt="favorite.svg" id="favorites">
+      <p class="icon-name">즐겨찾기</p>
+    </div>
+    <div class="nav-icon">
+      <img src="{% static '/img/my_profile.svg'%}" alt="my_profile.svg" id="my_profile">
+      <p class="icon-name">내 정보</p>
+    </div>
+  </nav>
+</body>

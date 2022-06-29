@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.title{
+  position: relative;
+  height: 281px;
+  background-color: #FDE461;;
+}
+
+.title-info{
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+
+.title p{
+  margin-left: 9px;
+  margin-bottom: 2px;
+  width: 181px;
+  height: 32.78px;
+
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 0.092px;
+  color: #01BEB1;
+}
+
+h1{
+  font-family: 'CWDangamAsac-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: #10675B;
+}
+
+.search_container{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.search_container input{
+  margin-top: 17px;
+  width: 85%;
+  max-width: 324px;
+  height: 45px;
+  background: #FFFFFF;
+  border: 2px solid #10675B;
+  border-radius: 30px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  padding: .8em 1em;
+}
+
+.search_container input::placeholder{
+  color :#ABB0BC;
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+  background-size: contain;
+  background-position:  100%;
+  background-repeat: no-repeat;
+}
+
+.board_container{
+  margin-top: 9px;
+  width: 85%;
+  max-width: 324px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+  align-items: center;
+  border-bottom: 1px solid #10675B;
+}
+
+.board_container h2{
+  flex-basis: auto;
+  color: #10675B;
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.board_container p{
+  flex-grow: 1;
+  margin-left: 10px;
+  color: #6B6B6B;
+  font-family: 'Noto Sans Thai';
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.board_container:hover{
+ cursor: pointer; 
+}
+
+#chevron_right{
+  flex-basis: 9px;
+  height: 14.14px; 
+}
+
+.shortcut{
+  position: relative;
+  margin-top: 9px;
+  width: 85%;
+  max-width: 324px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
+}
+
+.shortcut h2{
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+    
+  color: #10675B; 
+}
+
+#info_shortcut{
+  position: relative;
+  top: 5px;
+}
+
+.shortcut_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 296px;
+  height: 226px;
+  margin-top: 8.85px;
+  padding: 25px 15px;
+  background: #10675B;
+  border-radius: 15px;
+}
+
+.shortcut_path{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+
+  color: #FDE461;
+}
+
+.shortcut_detail{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 30px;
+}
+
+.shortcut_detail:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.shortcut_over{
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+  width: 46px;
+  height: 22.16px;
+
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  border-bottom: 2px solid #01BEB1;;
+  color: #01BEB1;
+}
+
+.cross_line{
+  width: 300px;
+  height: 0px;
+  border: 0.1px solid #EBEBEB;
+}
