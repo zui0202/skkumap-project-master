@@ -36,6 +36,11 @@
 }
 .favorites-list{
   margin-top: 10.27px;
+  overflow: scroll;
+  height: 70vh;
+}
+.favorites-list::-webkit-scrollbar{
+  display: none;
 }
 .favorite{
   margin-top: 28px;
