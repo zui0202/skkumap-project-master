@@ -26,7 +26,7 @@ const renderFavoriteList = () => {
     //heart click event #change icon #change likes 
     HEART_IMG.addEventListener("click",(e)=>{
       favorite.isheart = favorite.isheart ? false : true;
-      HEART_IMG.src = favorite.isheart ? "../../static/img/filled_heart.svg'" : "../../static/img/empty_heart.svg";
+      HEART_IMG.src = favorite.isheart ? "../../static/img/filled_heart.svg" : "../../static/img/empty_heart.svg";
       favorite.nlikes = favorite.isheart ? favorite.nlikes+1 : favorite.nlikes-1;
       e.target.parentElement.childNodes[0].innerText = `${favorite.nlikes} likes`;
       console.dir(e.target.parentElement.childNodes[0].innerText);
