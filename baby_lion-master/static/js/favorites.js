@@ -1,5 +1,5 @@
 
-import FAVORITES from "./building.js";
+import FAVORITES from "./favorites_building.js";
 
 // DOM
 const FAVOR_LIST = document.querySelector(".favorites-list");
