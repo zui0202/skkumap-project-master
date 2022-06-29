@@ -37,7 +37,7 @@
 .favorites-list{
   margin-top: 10.27px;
   overflow: scroll;
-  height: 70vh;
+  height: 60vh;
 }
 .favorites-list::-webkit-scrollbar{
   display: none;
