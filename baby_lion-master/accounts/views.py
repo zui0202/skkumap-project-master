@@ -21,3 +21,7 @@ def login(request):
             return redirect('main')
         else:
             return render(request, 'login.html')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('login')

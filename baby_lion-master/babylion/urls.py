@@ -24,6 +24,7 @@ urlpatterns = [
     path('loading/', skkumap_views.loading, name='loading'),
     path('onboarding/', skkumap_views.onboarding, name='onboarding'),
     path('login/', accounts_views.login, name='login'),
+    path('logout/', accounts_views.logout, name='logout'),
     path('favorites/', skkumap_views.favorites, name='favorites'),
     path('profile/', skkumap_views.profile, name='profile'),
     path('community/', skkumap_views.community, name='community'),
