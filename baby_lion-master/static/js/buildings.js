@@ -2,20 +2,20 @@ const BUILDINGS = [
   {
     number : "5",
     name : "호암관",
-    img : "../building/building_images/호암관.png",
+    img : "../../static/img/호암관.png",
     facility_icons : [
         {
-          src : "../svg/check.svg",
+          src : "../../static/img/check.svg",
           alt : "check.svg",
           id : "check"
         },
         {
-          src : "../svg/elevator.svg",
+          src : "../../static/img/elevator.svg",
           alt : "elevator.svg",
           id : "elevator"
         },
         {
-          src : "../svg/wheelchair.svg",
+          src : "../../static/img/wheelchair.svg",
           alt : "wheelchair.svg",
           id : "wheelchair"  
         }

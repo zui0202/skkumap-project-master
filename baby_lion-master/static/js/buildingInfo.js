@@ -50,7 +50,7 @@ BUILDINGS[0].floors.forEach((floor, index) => {
   const floor_info = document.createElement("li");
   const chevron_icon = document.createElement("img");
 
-  chevron_icon.src = "../svg/chevron_down.svg";
+  chevron_icon.src = "../../static/img/chevron_down.svg";
   chevron_icon.alt = "chevron_down.svg";
   chevron_icon.id = "chevron_down";
   floor_info.classList.add(`floor`);
@@ -71,13 +71,13 @@ floor_level.textContent = BUILDINGS[0].floors[0].level;
 floor_detail.appendChild(floor_level);
 
 const floor_img = document.createElement("img");
-floor_img.src = `../svg/${BUILDINGS[0].floors[0].info}.svg`;
+floor_img.src = `../../static/img/${BUILDINGS[0].floors[0].info}.svg`;
 floor_img.alt = `${BUILDINGS[0].floors[0].info}.svg`;
 floor_img.id = `${BUILDINGS[0].floors[0].info}`;
 floor_detail.appendChild(floor_img);
 
 const close_img = document.createElement("img");
-close_img.src = `../svg/close.svg`;
+close_img.src = `../../static/img/close.svg`;
 close_img.alt = `close.svg`;
 close_img.id = `close`;
 floor_detail.appendChild(close_img);
