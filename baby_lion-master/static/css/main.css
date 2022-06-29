@@ -115,8 +115,8 @@ h1{
   border-radius: 30px;
   margin-top: 19px;
   display: flex;
-  justify-content: center;
-  align-items: center;;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input{
@@ -133,7 +133,9 @@ input{
   letter-spacing: -0.408px;
   color: #ABB0BC;
 }
-
+.search{
+  margin-right: 18px;
+}
 input:focus{
   outline:none;
 }
