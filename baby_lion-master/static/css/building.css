@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.building_images{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  height: 248px;
+  left: 0px;
+  top: 64px;
+}
+
+.building_image{
+  object-fit: cover;
+}
+
+.building_title{
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 246px;
+  height: 40px;
+  left: calc(50% - 246px/2 + 0.5px);
+  top: calc(50% - 55px/2 - 45.5px);
+  
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 22px;
+  
+  text-align: center;
+  letter-spacing: -0.408px;
+}
+
+.building_number{
+  color: #01BEB1;
+}
+
+.float_box{
+  margin-left: auto;
+  margin-right: auto;
+  width: 353px;
+}
+
+.left_box{
+  float: left;
+}
+
+.right_box{
+  float: right;
+}
+
+.conv_facilities{
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 255px;
+  left: 12px;
+  top: 369px;
+
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.408px;
+
+  color: #FDE461;
+
+  background: #10675B;
+  border-radius: 15px;
+}
+
+.facility_icons{
+  padding: 11px 11px 5px 11px;
+}
+
+.facility_details{
+  padding-left: 10px ;
+  line-height: 12px;
+}
+
+
+#check_o{
+  width: 22px;
+  height: 22px;
+  left: 1px;
+  top: 1px; 
+}
+
+#people{
+  width: 20px;
+  height: 24px;
+  left: 49px;
+  top: 380px;
+}
+
+#wheelchair{
+  width: 20px;
+  height: 25.6px;
+  left: 72px;
+  top: 380px;
+}
+
+.facility_title{
+  margin-top: 5px;
+  font-weight:bolder;
+}
+
+.facility_detail{
+  margin-top: 8px;
+}
+
+.timetable{
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 93px;
+  left: 12px;
+  top: 628px;
+  
+  background: #10675B;
+  border-radius: 15px;
+}
+
+.time_icon{
+  margin-top: 4px;
+  width: 140px;
+  height: 35px;
+  left: 12px;
+  top: 628px;
+  text-align: center;
+  background: #FDE461;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#alarm{
+  margin-top: 10px;
+  width: 24px;
+  height: 21px;
+}
+
+/* Rectangle 40 */
+
+.floor_info{
+  float: right;
+  width: 207px;
+  height: 352px;
+  left: 157px;
+  top: 369px;  
+  background: #10675B;
+  border-radius: 15px;
+
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.info_title{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.408px;
+  width: 153.77px;
+  border-bottom: solid 1px #FDE461;
+
+  color: #FDE461;
+}
+
+.floor{
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 153.77px;
+  height: 25px;
+  border-bottom: solid 1px #FDE461;
+}
+
+.floor:hover{
+  cursor: pointer;
+}
+
+#info{
+  position: relative;
+  top:3px
+}
+
+#chevron_down{
+  position: absolute;
+  left:90%;
+  width: 14.14px;
+  height: 8.49px;
+  top: 7.76px;
+
+}
+
+.floor_detail{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top:248px;
+  width: 375px;
+  height: 422px;
+  background: rgba(12, 77, 68, 0.7);
+  left: 50%;
+  transform: translate(-50%, 0%);
+  backdrop-filter: blur(10px);
+}
+
+.floor_level{
+  margin-top: 30px;
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #FFFFFF;
+}
+
+#hoam_floor1{
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+#close{
+  position: absolute;
+  bottom: 380px;
+  right: 21px;
+}
+
+#close:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'CWDangamAsac-Bold';
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+}
+body{
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  background: #01BEB1;
+
+}
+.loading{
+  background: #01BEB1;
+  overflow: hidden;
+  max-width: 600px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+.row{
+  width: 200%;
+  overflow: hidden;
+  height: 66px;
+  width: 300%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: -0.408px;
+  color: #1D9C87;
+  background: #01BEB1;
+}
+.row:nth-child(odd){
+  animation-duration: 6s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  /* animation-iteration-count: 1; */
+}
+.green{
+  color: #10675B;
+}
+.yellow{
+  color: #FFFC54;
+}
+.row:nth-child(2n){
+  animation-duration: 6s;
+  animation-name: slideout;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-iteration-count: 1; */
+  animation-direction: alternate;
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 200%
+  }
+
+  to {
+    margin-left: -100%;
+    width: 200%;
+  }
+}
+@keyframes slideout {
+  from {
+    margin-left: -100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200%
+  }
+}
