@@ -50,34 +50,30 @@
       <img src="{% static '/img/search.svg'%}" alt="search" class="search">
     </div>
     <div class="con-mid">
-      <div class="map-contents">
-        <a href="/map">
+      <a class="map-contents" href="/map">
         <img class="ginko" src="{% static '/img/ginko.svg'%}" alt="ginko" />
-        </a>
         <h2 class="map-contents-text">명륜</h2>
-      </div>
+      </a>
       <div class="map-contents" id="natural-sci">
         <img class="robot" src="{% static '/img/robot.svg'%}" alt="robot" />
         <h2 class="map-contents-text">율전</h2>
       </div>
     </div>
     <div class="con-bot">
-      <div class="community">
+      <a class="community" href="/community">
         <h5 class="community-text">꿀팁 및 정보 공유 커뮤니티</h5>
-        <a href="/community" style="text-decoration:none"><h2 class="community-title">스꾸 꿀단지 🍯</h2></a> 
-      </div>
-      <div class="alert-setting">
-        <a href="/alarm">
+        <h2 class="community-title">스꾸 꿀단지 🍯</h2>
+      </a>
+      <a class="alert-setting" href="/alarm">
         <img class="alarm" src="{% static '/img/alarm_yellow.svg'%}" alt="alarm" />
-        </a>
         <h5 class="alert-text">알림 설정</h5>
-      </div>
+      </a>
     </div>
   </section>
     <!-- 하단 메뉴바 -->
     <nav class="nav-bar">
       <a class="nav-icon" href="/">
-        <img src="{% static '/img/home.svg'%}" alt="home.svg" id="home">
+        <img src="{% static '/img/home_yellow.svg'%}" alt="home.svg" id="home">
         <p class="icon-name">홈</p>
       </a>
       <a class="nav-icon" href="/message">
