@@ -174,14 +174,34 @@
 }
 
 
-/* 재배치 */
-/* #b600-tag{
-  width : 13.88%; 
-  top : 21.52%; 
-  left : 45.3%;
+/* 구름 배치 python calculate */
+#white1{ 
+  width : 5.82%; 
+  top : -5.43%; 
+  left : 0.0%;
 }
-#central-lib-tag{
-  width : 13.22%; 
-  top : 9.78%; 
-  left : 38.73%;
-} */
+#blue1{ 
+  width : 7.53%; 
+  top : -10.43%; 
+  left : 14.14%;
+}
+#white2{ 
+  width : 5.42%; 
+  top : -0.87%; 
+  left : 42.3%;
+}
+#white3{ 
+  width : 12.29%; 
+  top : 9.13%; 
+  left : 70.32%;
+}
+#blue2{ 
+  width : 7.4%; 
+  top : 10.65%; 
+  left : 78.78%;
+}
+#white4{ 
+  width : 5.42%; 
+  top : 39.56%; 
+  left : 83.8%;
+}

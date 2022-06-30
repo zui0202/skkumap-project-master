@@ -61,6 +61,7 @@ body{
   transition: 1s all ease-in-out;
 }
 .map-container{
+  position: relative;
   width: 100%;
   overflow: scroll;
   /* display: flex; */
@@ -77,6 +78,7 @@ body{
 
 .background{
   width: 100%;
+  z-index: 1;
 }
 .maps{
   width: 90%;
@@ -85,7 +87,8 @@ body{
   /* transform:rotate(45deg) */
   transition: 1s all;
   min-width: 618px;
-  top: 30%
+  top: 30%;
+  /* overflow: hidden; */
 }
 
 .building{
@@ -107,6 +110,25 @@ body{
 }
 
 
+
+.cloud{
+  position: absolute;
+  z-index: -1;
+  animation-name: cloudmove;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes cloudmove {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 50%;
+  }
+} */
+
+/* 왼쪽하단 버스승차 안내 */
 .info{
   position: absolute;
   left: 25px;
@@ -114,12 +136,6 @@ body{
   z-index: 10;
   width: 50%;
   max-width: 200px;
-
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center; */
-  /* opacity: 0.7; */
 }
 .ride-tag{
   width: 30%;
@@ -128,6 +144,9 @@ body{
   width: 10%;
 }
 
+
+
+/* input range custom css */
 input[type="range"]::-webkit-slider-thumb{
   background-color: var(--background);
   transition: 1s all;
@@ -155,5 +174,4 @@ input[type=range]::-webkit-slider-runnable-track  {
   -webkit-appearance: none;
   box-shadow: none;
   border: none;
-  /* background: transparent; */
 }
