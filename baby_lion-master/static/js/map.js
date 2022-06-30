@@ -3,8 +3,7 @@ const toggle = document.querySelector(".toggle-cover");
 const toggleBtn = document.querySelector(".toggle-btn");
 const MAP_CONTAINER =document.querySelector(".map-container");
 const MAPS = document.querySelector(".maps")
-
-var slider = document.getElementById("myRange");
+const slider = document.getElementById("myRange");
 
 slider.oninput = function() {
   MAPS.style.transform = `scale(${slider.value})`;
@@ -13,13 +12,7 @@ slider.oninput = function() {
 }
 //scroll bar default value
 MAP_CONTAINER.scrollTo( ( MAPS.offsetWidth - MAP_CONTAINER.offsetWidth)/2,0 )
-const enlarge = () =>{
-  console.log("hello");
-  MAPS.style.transform = "scale(1.5)";
-}
-MAP_CONTAINER.ondblclick = enlarge;
 
-// MAP_CONTAINER.addEventListener('dblclick', enlarge)
 
 //dark mode 변환
 let current = "light"
@@ -44,9 +37,7 @@ toggle.addEventListener("click",()=>{
       toggle.style.backgroundColor = "#ffff";
       document.documentElement.setAttribute('color-theme', 'light');
       toggleBtn.animate(
-        {
-          transform : [ "translateX(24px)", "translateX(0px)" ]
-        },
+        { transform : [ "translateX(24px)", "translateX(0px)" ] },
         {
           duration: 1000,
           fill: "forwards",
