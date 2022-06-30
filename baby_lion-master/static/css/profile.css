@@ -58,6 +58,7 @@ h1{
   color: #ABB0BC;
 }
 
+
 .item_content{
   display: flex;
   flex-direction: row;
@@ -73,10 +74,25 @@ h1{
   color: #10675B;
 }
 
-#toggle_on,#toggle_ff{
+
+.item_content.on_off{
+  justify-content: flex-start;
+}
+.item_content.on_off p{
+  width: 25px;
+}
+
+.item_content :not(.on_off):hover {
+  cursor: pointer;
+}
+
+.item_content.on_off img{
   position: relative;
-  top:1px;
-  right: 130px;
+  top: 1.5px;
+}
+
+.toggle_off{
+  transform: scaleX(-1);
 }
 
 .logout, .sharing{
@@ -103,4 +119,8 @@ h1{
 
 #my{
   color: yellow;
+}
+
+.logout,.sharing_icons,#sharing_arrow,.profile_img:hover{
+  cursor: pointer;
 }
